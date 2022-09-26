@@ -142,11 +142,11 @@ address {
 /* =======================================NAV*/
 .nav.container {
   display: flex;
+  align-items: center;
 }
 
 .nav-main {
   display: flex;
-  align-self: center;
 }
 
 /* nav menu */
@@ -179,7 +179,6 @@ address {
 .nav-list {
   display: flex;
   margin-left: auto;
-  align-items: center;
   gap: 50px;
 }
 
