@@ -279,6 +279,8 @@ address {
   line-height: 1.71;
 }
 
+/* About-icon */
+
 /* ======================================WORK*/
 
 .work.section {
@@ -324,7 +326,8 @@ address {
 }
 
 .team-content {
-  padding: 30px 60px;
+  padding: 30px 60px 0 60px;
+  margin-bottom: 16px;
 }
 
 .team-subtitle {
@@ -340,6 +343,27 @@ address {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+}
+
+/* team-SOC========== */
+
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 32px 30px 32px;
+}
+
+.team-soc-item {
+  width: calc((100% - 30px) / 4);
+}
+
+.team-soc-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #2196f3;
 }
 
 /* ====================================FOOTER*/
