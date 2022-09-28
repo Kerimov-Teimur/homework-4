@@ -281,6 +281,19 @@ address {
 
 /* About-icon */
 
+.about-icon {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+
+.about-icon-link {
+  width: 70px;
+  height: 70px;
+}
+
 /* ======================================WORK*/
 
 .work.section {
@@ -364,6 +377,29 @@ address {
   height: 44px;
   border-radius: 50%;
   background-color: #2196f3;
+}
+
+/* ====================================CLIENTS */
+
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients-item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  width: calc((100% - 150px) / 6);
+}
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 /* ====================================FOOTER*/
