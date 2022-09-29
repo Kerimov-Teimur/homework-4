@@ -20,6 +20,15 @@
   --footer-bcg-color: #2f303a;
 
   --color-icon: #afb1b8;
+  --shadow-footer: rgba(255, 255, 255, 0.1);
+
+  --shadow-hero-btn: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  --shadow-gallery: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  --shadow-team: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
   --color-white-shadow: rgba(255, 255, 255, 0.6);
 }
@@ -273,7 +282,7 @@ address {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-hero-btn);
 }
 
 .hero-btn:hover,
@@ -308,7 +317,7 @@ address {
 
 .about-icon {
   border-radius: 4px;
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bcg-color);
   margin-bottom: 30px;
 }
 
@@ -359,8 +368,7 @@ address {
   width: calc((100% - 3 * 30px) / 4);
 
   background-color: var(--white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-team);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -404,20 +412,17 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  color: var(--color-icon);
+}
+
+.team-soc-icon {
+  fill: currentColor;
 }
 
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: var(--accent);
-}
-
-.team-soc-link:hover .team-soc-icon,
-.team-soc-link:focus .team-soc-icon {
-  fill: var(--white-color);
-}
-
-.team-soc-icon {
-  fill: var(--color-icon);
+  color: var(--white-color);
 }
 
 /* ====================================CLIENTS */
@@ -469,6 +474,11 @@ address {
   background-color: var(--footer-bcg-color);
 }
 
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
 .address {
   font-style: normal;
 }
@@ -498,11 +508,6 @@ address {
 
 /* =========JOIN */
 
-.footer .container {
-  display: flex;
-  align-items: baseline;
-}
-
 .join {
   margin-left: 70px;
 }
@@ -514,7 +519,7 @@ address {
   text-transform: uppercase;
   margin-bottom: 20px;
 
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .join-list {
@@ -535,7 +540,7 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--shadow-footer);
   fill: var(--white-color);
 }
 
@@ -592,16 +597,6 @@ address {
   border: 1px solid #eeeeee;
 }
 
-.gallery-icon {
-  display: block;
-}
-
-.gallery-icon:hover,
-.gallery-icon:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .gallery-title {
   margin: 0;
 
@@ -619,4 +614,13 @@ address {
 
 .gallery-content {
   padding: 20px 24px;
+}
+
+.gallery-icon {
+  display: block;
+}
+
+.gallery-icon:hover,
+.gallery-icon:focus {
+  box-shadow: var(--shadow-gallery);
 }
