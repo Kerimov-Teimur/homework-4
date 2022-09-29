@@ -498,8 +498,9 @@ address {
 
 /* =========JOIN */
 
-.footer-container {
+.footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .join {
@@ -527,12 +528,20 @@ address {
   width: calc((100% - 30px) / 4);
 }
 
-.join-icon {
-  display: block;
+.join-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #2196f3;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--white-color);
+}
+
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--accent);
 }
 
 /* =================================PORTFOLIO*/
@@ -583,17 +592,15 @@ address {
   border: 1px solid #eeeeee;
 }
 
-/* .gallery-icon:hover,
-.gallery-icon:focus {
-  opacity: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-} */
+.gallery-icon {
+  display: block;
+}
 
-/* .gallery-item:hover,
-.gallery-item:focus {
-  background: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+.gallery-icon:hover,
+.gallery-icon:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-} */
+}
 
 .gallery-title {
   margin: 0;
